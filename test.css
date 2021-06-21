@@ -1,11 +1,13 @@
 body{
 	font-family: sans-serif,微軟正黑體;
 }
+//做一個有底色的bar條
 .bar{
 	background-color: #a8d0ed;
 	color: black;
 	font-size:30px;
 }
+//滑鼠移到bar條上時改變顏色
 .bar:hover{
 	background-color: #99b4f6;
 }
@@ -17,6 +19,11 @@ table{
 th, td{
 	text-align: center;
 }
+//表格的跳過單數格會有不同的顏色
+tr:nth-child(even){
+	background-color: #a8d0ed;
+}
+//條列式的左邊預留空間
 li{
 	text-align: left;
 	margin-left: 50px
